@@ -37,19 +37,8 @@ export default class IvuLocs extends Component {
                     <table className="table table-striped table-dark">
                         <thead className="thead-dark">
                             <tr>
-                                <td>uuid</td>
-                                <td>lat</td>
-                                <td>lon</td>
-                                <td>ts</td>
-                                <td>alias</td>
-                                <td>vehicle</td>
-                                <td>label</td>
-                                <td>licensePlate</td>
-                                <td>tripId</td>
-                                <td>routeId</td>
-                                <td>directionId</td>
-                                <td>startTime</td>
-                                <td>startDate</td>
+                                <td>date</td>
+                                <td>time</td>
                             </tr>
                         </thead>
                         <tbody>{this.dataTable()}</tbody>
