@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+
 import Table from './table';
 
 export default class IvuLocs extends Component {
