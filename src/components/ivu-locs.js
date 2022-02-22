@@ -40,6 +40,18 @@ export default class IvuLocs extends Component {
                             <tr>
                                 <td>date</td>
                                 <td>time</td>
+                                <td>logLevel</td>
+                                <td>addressPartA</td>
+                                <td>addressPartB</td>
+                                <td>peer</td>
+                                <td>addressNext</td>
+                                <td>direction</td>
+                                <td>sender</td>
+                                <td>receiver</td>
+                                <td>teleType</td>
+                                <td>teleVersion</td>
+                                <td>teleId</td>
+                                <td>netPoint</td>
                             </tr>
                         </thead>
                         <tbody>{this.dataTable()}</tbody>
