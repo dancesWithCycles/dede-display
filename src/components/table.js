@@ -5,6 +5,7 @@ class Table extends Component {
     render () {
         return (
             <tr>
+                <td>{this.props.obj.tgaTs}</td>
                 <td>{this.props.obj.date}</td>
                 <td>{this.props.obj.time}</td>
                 <td>{this.props.obj.logLevel}</td>

@@ -38,6 +38,7 @@ export default class IvuLocs extends Component {
                     <table className="table table-striped table-dark">
                         <thead className="thead-dark">
                             <tr>
+                                <td>tgaTs</td>
                                 <td>date</td>
                                 <td>time</td>
                                 <td>logLevel</td>
