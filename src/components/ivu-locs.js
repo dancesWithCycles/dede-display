@@ -46,12 +46,29 @@ export default class IvuLocs extends Component {
                                 <td>peer</td>
                                 <td>addressNext</td>
                                 <td>direction</td>
-                                <td>sender</td>
-                                <td>receiver</td>
+                                <td>senderType</td>
+                                <td>senderId</td>
+                                <td>receiverType</td>
+                                <td>receiverId</td>
                                 <td>teleType</td>
                                 <td>teleVersion</td>
                                 <td>teleId</td>
                                 <td>netPoint</td>
+                                <td>relPosition</td>
+                                <td>longitude</td>
+                                <td>latitude</td>
+                                <td>offRoute</td>
+                                <td>velocity</td>
+                                <td>heading</td>
+                                <td>driverNumber</td>
+                                <td>blockNo</td>
+                                <td>lineNo</td>
+                                <td>tripNo</td>
+                                <td>routeNo</td>
+                                <td>deviation</td>
+                                <td>loadDegree</td>
+                                <td>destinationNo</td>
+                                <td>tripType</td>
                             </tr>
                         </thead>
                         <tbody>{this.dataTable()}</tbody>
