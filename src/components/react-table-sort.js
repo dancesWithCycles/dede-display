@@ -41,6 +41,7 @@ function ReactTableSort () {
         []
     );
 
+    /* useSortBy plugin to implement column sorting */
     const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable({ columns, data }, useSortBy);
 
