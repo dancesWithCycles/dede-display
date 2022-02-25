@@ -1,9 +1,11 @@
 import React from 'react';
-
+import ReactTable from '../components/react-table';
+import ReactTableSort from '../components/react-table-sort';
 const Home = () => {
     return (
         <>
-            <p>I am home. I have arrived.</p>
+            <ReactTable />
+            <ReactTableSort />
         </>
     );
 };
