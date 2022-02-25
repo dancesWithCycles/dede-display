@@ -168,7 +168,7 @@ function ReactTableFilter () {
                                 >
                                     {column.render('Header')}
                                     <span>
-				    {/* eslint-disable no-nested-ternary */}
+                                        {/* eslint-disable no-nested-ternary */}
                                         {column.isSorted ? (column.isSortedDesc ? '>' : '<') : ''}
                                     </span>
                                     <div>{column.canFilter ? column.render('Filter') : null}</div>
