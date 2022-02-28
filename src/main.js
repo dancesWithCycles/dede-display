@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/home';
-import About from './pages/about';
 import Contact from './pages/contact';
 import IvuLocs from './components/ivu-locs';
-import Vehicles from './pages/vehicles';
 import NavBar from './components/nav-bar';
 
 const Main = () => {
@@ -16,11 +13,8 @@ const Main = () => {
         <BrowserRouter>
             <NavBar />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/" element={<IvuLocs />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/ivu-locs" element={<IvuLocs />} />
-                <Route path="/vehicles" element={<Vehicles />} />
             </Routes>
         </BrowserRouter>
     );
