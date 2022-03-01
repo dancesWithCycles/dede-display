@@ -10,7 +10,7 @@ export default class IvuLocs extends Component {
     }
 
     componentDidMount () {
-        axios.defaults.baseURL = 'http://192.168.22.16:42001';
+        axios.defaults.baseURL = 'https://dede-map.vbn-gmbh.local:42001';
         axios.defaults.headers.get['Content-Type'] =
       'application/json;charset=utf-8';
         axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
