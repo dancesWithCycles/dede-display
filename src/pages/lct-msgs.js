@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 
 const LctMsgs = () => {
-    /*fetch msgs in a javascript function*/
+    /*fetch msgs in a JavaScript function*/
     const getMsgs = async () => {
         try {
             const msgs = await axios.get('https://dede-display.vbn.de:42001/ivu-loc');
