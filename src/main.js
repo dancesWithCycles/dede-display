@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LctMsgs from './pages/lct-msgs';
 import Contact from './pages/contact';
 import IvuLocs from './components/ivu-locs';
 import NavBar from './components/nav-bar';
@@ -14,6 +15,7 @@ const Main = () => {
             <NavBar />
             <Routes>
                 <Route path="/" element={<IvuLocs />} />
+                <Route path="/lct-msgs" element={<LctMsgs />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </BrowserRouter>

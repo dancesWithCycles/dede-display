@@ -6,6 +6,7 @@ monitoring data service for [Designated Driver (Dede)](https://dedriver.org)
 0. [General](#General)
 1. [Quick Start Guide](#Quick-Start-Guide)
 2. [Setup](doc/setup.md)
+3. [Links](#Links)
 
 # General
 
@@ -48,3 +49,7 @@ npm run build
 ## Links
 
 [source](git@github.com:dancesWithCycles/grassroot-react-app.git)
+
+# Links
+
+[Using React’s useEffect Hook to Fetch Data and Periodically Refresh The Data](https://javascript.plainenglish.io/using-reacts-useeffect-hook-to-fetch-data-and-periodically-refresh-that-data-2a69b6d44081)
