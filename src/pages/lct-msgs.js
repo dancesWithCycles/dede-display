@@ -5,6 +5,7 @@ const LctMsgs = () => {
     /*fetch msgs in a JavaScript function*/
     const getMsgs = async () => {
         try {
+            /*TODO handle errors: https://www.valentinog.com/blog/await-react/*/
             const msgs = await axios.get('https://dede-display.vbn.de:42001/ivu-loc');
             /*initial log*/
             console.log('msgs: ' + msgs.data);

@@ -53,3 +53,5 @@ npm run build
 # Links
 
 [Using React’s useEffect Hook to Fetch Data and Periodically Refresh The Data](https://javascript.plainenglish.io/using-reacts-useeffect-hook-to-fetch-data-and-periodically-refresh-that-data-2a69b6d44081)
+
+[How To Use Async Await in React (componentDidMount Async)](https://www.valentinog.com/blog/await-react/)
