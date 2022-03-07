@@ -25,6 +25,14 @@ const LctMsgs = () => {
         /*hook need to be placed in body of the function component in which it is used*/
         getMsgs();
 
+        /*update msgs periodically*/
+        const interval = setInterval(() => {
+            getMsgs();
+        }, 1000);
+
+        /*clear interval when the user navigates to another page*/
+        return () => clearInterval(interval);
+
     /*use an empty dependency array to ensure the hook is running only once*/
     /*TODO study dependency array: https://reactjs.org/docs/hooks-effect.html*/
     }, []);
