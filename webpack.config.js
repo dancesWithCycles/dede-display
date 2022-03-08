@@ -21,6 +21,7 @@ module.exports = {
     },
     module: {
 	rules: [
+	    //process any .js or .jsx file with Babel and Eslint loader
 	    {
 		test: /\.(js|jsx)$/,
 		exclude: /node_modules/,
@@ -30,6 +31,21 @@ module.exports = {
 		    //use esling-loader to hook JavaScript linter ESLint into Webpack
 		    'eslint-loader'
 		]
+	    },
+	    //process any .css file with CSS loader
+	    {
+		test: /\.css$/,
+		use: [
+		    'style-loader',
+		    'css-loader',
+		],
+	    },
+	    //url-loader is required to pull images an fonts for bootstrap
+	    {
+		test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+		use: [
+		    'url-loader',
+		],
 	    },
 	    {
 		test: /\.less$/,

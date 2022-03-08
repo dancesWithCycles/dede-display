@@ -1,5 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+/*some stylesheet is required to use react-bootstrip components*/
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import LctMsgs from './pages/lct-msgs';
 import Contact from './pages/contact';
 import NavBar from './components/nav-bar';

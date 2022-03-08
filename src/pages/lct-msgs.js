@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Table from 'react-bootstrap/Table';
 import axios from 'axios';
 import MsgsTableEntry from '../components/msgs-table-entry';
 import MsgsTableHead from '../components/msgs-table-head';
@@ -48,12 +49,14 @@ const LctMsgs = () => {
 
     return (
         <>
-            <table className="table table-striped table-dark">
+            {/*size="sm" cuts cell padding in half*/}
+            {/*variant="dark" inverts colors*/}
+            <Table striped bordered hover size="sm" variant="dark" responsive>
                 <thead className="thead-dark">
                     <MsgsTableHead />
                 </thead>
                 <tbody>{msgsTable()}</tbody>
-            </table>
+            </Table>
         </>
     );
 };
