@@ -12,7 +12,7 @@ const LctMsgs = () => {
     const getMsgs = async () => {
         try {
             /*TODO handle errors: https://www.valentinog.com/blog/await-react/*/
-            const msgs = await axios.get('https://dede-display.vbn.de:42001/ivu-loc');
+            const msgs = await axios.get('<proto://<address>:<port>/<route>');
             /*set state*/
             setMsgs(msgs.data);
         } catch (err) {
