@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
+import Alert from 'react-bootstrap/Alert';
 import PropTypes from 'prop-types';
+import msgAgeAlertVariant from './msg-age-alert-variant';
 
 class MsgsTableEntry extends Component {
     render () {
+        const getMsgAge = () => {
+            const sysTs = Date.now();
+            const age = sysTs - this.props.obj.timeUnix;
+            return age;
+        };
+
         return (
             <tr>
+                <td>
+                    <Alert variant={msgAgeAlertVariant(getMsgAge())}>
+                        {Math.round(getMsgAge() / 1000)}
+                    </Alert>
+                </td>
                 <td>{this.props.obj.date}</td>
-                <td>{this.props.obj.time}</td>
+                <td>{this.props.obj.time} </td>
                 <td>{this.props.obj.logLevel}</td>
                 <td>{this.props.obj.addressPartA}</td>
                 <td>{this.props.obj.addressPartB}</td>

@@ -4,6 +4,7 @@ class MsgsTableHead extends Component {
     render () {
         return (
             <tr>
+                <td>Age</td>
                 <td>date</td>
                 <td>time</td>
                 <td>logLevel</td>
