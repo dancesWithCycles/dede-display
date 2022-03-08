@@ -9,9 +9,6 @@ function NavigationBar () {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <LinkContainer to="/lct-msgs">
-                        <Nav.Link>LctMsgs</Nav.Link>
-                    </LinkContainer>
                     <LinkContainer to="/contact">
                         <Nav.Link>Contact</Nav.Link>
                     </LinkContainer>

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import MsgsTableEntry from '../components/msgs-table-entry';
+import MsgsTableHead from '../components/msgs-table-head';
 
 const LctMsgs = () => {
     /*store msgs as array in function component state*/
@@ -37,15 +39,21 @@ const LctMsgs = () => {
     /*TODO study dependency array: https://reactjs.org/docs/hooks-effect.html*/
     }, []);
 
+    /*map over msgs array*/
+    const msgsTable = () => {
+        return msgs.map((msg, key) => {
+            return <MsgsTableEntry obj={msg} key={key} />;
+        });
+    };
+
     return (
         <>
-            <h1>IVU Location Messages</h1>
-            <ul>
-                {/*map over msgs array*/}
-                {msgs.map((msg) => (
-                    <li key={msg._id}>{msg.senderId}</li>
-                ))}
-            </ul>
+            <table className="table table-striped table-dark">
+                <thead className="thead-dark">
+                    <MsgsTableHead />
+                </thead>
+                <tbody>{msgsTable()}</tbody>
+            </table>
         </>
     );
 };
