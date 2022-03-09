@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Alert from 'react-bootstrap/Alert';
+import Badge from 'react-bootstrap/Badge';
 import PropTypes from 'prop-types';
-import msgAgeAlertVariant from './msg-age-alert-variant';
+import msgAgeBadgeBg from './msg-age-badge-bg';
+import seconds2dmhs from './seconds2dhms';
 
 class MsgsTableEntry extends Component {
     render () {
@@ -14,12 +15,12 @@ class MsgsTableEntry extends Component {
         return (
             <tr>
                 <td>
-                    <Alert variant={msgAgeAlertVariant(getMsgAge())}>
-                        {Math.round(getMsgAge() / 1000)}
-                    </Alert>
+                    <Badge bg={msgAgeBadgeBg(getMsgAge())}>
+                        <p>{seconds2dmhs(Math.round(getMsgAge() / 1000))}</p>
+                    </Badge>
                 </td>
                 <td>{this.props.obj.date}</td>
-                <td>{this.props.obj.time} </td>
+                <td>{this.props.obj.time}</td>
                 <td>{this.props.obj.logLevel}</td>
                 <td>{this.props.obj.addressPartA}</td>
                 <td>{this.props.obj.addressPartB}</td>
