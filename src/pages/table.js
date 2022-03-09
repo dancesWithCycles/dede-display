@@ -63,8 +63,8 @@ class Table extends Component {
                   </thead>
                   <tbody>
                       {/*map over data*/}
-                      {[...data].sort(sortTypes[currentSort].fn).map((p) => (
-                          <tr>
+                      {[...data].sort(sortTypes[currentSort].fn).map((p, index) => (
+                          <tr key={index}>
                               <td>{p.name}</td>
                               <td>${p.net_worth}b</td>
                           </tr>
