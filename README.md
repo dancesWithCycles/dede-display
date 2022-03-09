@@ -48,9 +48,23 @@ npm run build
 
 ## Links
 
-[source](git@github.com:dancesWithCycles/grassroot-react-app.git)
+### PropTypes
 
-# Links
+[How to Fix the ‘React eslint error missing in props validation’ When Developing a React App?](https://thewebdev.info/2021/09/19/how-to-fix-the-react-eslint-error-missing-in-props-validation-when-developing-a-react-app/)
+
+[Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+
+[propTypes](https://www.npmjs.com/package/prop-types)
+
+### Sort
+
+[How to sort table data with React](https://www.freecodecamp.org/news/sort-table-data-with-react/)
+
+[Sort table data with React](https://www.florin-pop.com/blog/2019/07/sort-table-data-with-react/)
+
+### Other
+
+[source](git@github.com:dancesWithCycles/grassroot-react-app.git)
 
 [Using React’s useEffect Hook to Fetch Data and Periodically Refresh The Data](https://javascript.plainenglish.io/using-reacts-useeffect-hook-to-fetch-data-and-periodically-refresh-that-data-2a69b6d44081)
 
