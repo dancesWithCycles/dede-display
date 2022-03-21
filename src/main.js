@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LctMsgs from './pages/lct-msgs';
+import LctMsg from './pages/lct-msg';
 import Contact from './pages/contact';
 import NavBar from './components/nav-bar';
 
@@ -18,6 +19,7 @@ const Main = () => {
             <NavBar />
             <Routes>
                 <Route path="/" element={<LctMsgs />} />
+                <Route path="/lct-msg" element={<LctMsg />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </BrowserRouter>
