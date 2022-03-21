@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 function NavigationBar () {
     return (
-        <Navbar bg="dark" expand="xxl" variant="dark">
+        <Navbar collapseOnSelect fixed="top" bg="dark" expand="xxl" variant="dark">
             <Navbar.Brand href="/">Dede-Display</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
