@@ -5,11 +5,11 @@ class MsgsTableHead extends Component {
         return (
             <tr>
                 <td>Alter</td>
-                <td>senderId</td>
-                <td>receiverType</td>
-                <td>teleType</td>
-                <td>teleVersion</td>
-                <td>teleId</td>
+                <td>Sender</td>
+                <td>Empfänger Typ</td>
+                <td>Telegramm Typ</td>
+                <td>Telegramm Version</td>
+                <td>Telegramm Id</td>
                 <td>Netzpunkt</td>
                 <td>Position [m] nach Netzpunkt</td>
                 <td>Längengrad</td>
