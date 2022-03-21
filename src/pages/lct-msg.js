@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Table from 'react-bootstrap/Table';
 import axios from 'axios';
-import LctMsgTableEntry from '../components/lct-msg-table-entry';
-import LctMsgTableHead from '../components/lct-msg-table-head';
+import LctMsgTable from '../components/lct-msg-table';
 
 const LctMsgs = () => {
     /*store msgs as array in function component state*/
@@ -41,27 +39,9 @@ const LctMsgs = () => {
     /*TODO study dependency array: https://reactjs.org/docs/hooks-effect.html*/
     }, []);
 
-    /*map over msgs array*/
-    const msgsTable = () => {
-        return msgs.map((msg, key) => {
-            /*the strict equals operator does not converts operants of differnet type*/
-            if (msg.teleType === '1') {
-                return <LctMsgTableEntry obj={msg} key={key} />;
-            }
-        });
-    };
+    /*element representing user-defined React component*/
+    const msgTable = <LctMsgTable name="Stefan" entries={msgs} />;
 
-    return (
-        <>
-            {/*size="sm" cuts cell padding in half*/}
-            {/*variant="dark" inverts colors*/}
-            <Table striped bordered hover size="sm" variant="dark" responsive>
-                <thead className="thead-dark">
-                    <LctMsgTableHead />
-                </thead>
-                <tbody>{msgsTable()}</tbody>
-            </Table>
-        </>
-    );
+    return <>{msgTable}</>;
 };
 export default LctMsgs;
