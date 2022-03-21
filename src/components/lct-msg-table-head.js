@@ -7,10 +7,7 @@ class MsgsTableHead extends Component {
                 <td>Alter</td>
                 <td>Mandant</td>
                 <td>Fahrzeug Nummer</td>
-                <td>Empfänger Typ</td>
-                <td>Telegramm Typ</td>
                 <td>Telegramm Version</td>
-                <td>Telegramm Id</td>
                 <td>Netzpunkt</td>
                 <td>Position [m] nach Netzpunkt</td>
                 <td>Längengrad</td>

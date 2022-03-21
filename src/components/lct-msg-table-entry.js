@@ -21,10 +21,7 @@ class MsgsTableEntry extends Component {
                 </td>
                 <td>{this.props.obj.senderId.split('/', 2)[0]}</td>
                 <td>{this.props.obj.senderId.split('/', 2)[1]}</td>
-                <td>{this.props.obj.receiverType}</td>
-                <td>{this.props.obj.teleType}</td>
                 <td>{this.props.obj.teleVersion}</td>
-                <td>{this.props.obj.teleId}</td>
                 <td>{this.props.obj.netPoint}</td>
                 <td>{this.props.obj.relPosition}</td>
                 <td>{this.props.obj.longitude}</td>

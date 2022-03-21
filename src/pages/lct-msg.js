@@ -44,7 +44,10 @@ const LctMsgs = () => {
     /*map over msgs array*/
     const msgsTable = () => {
         return msgs.map((msg, key) => {
-            return <LctMsgTableEntry obj={msg} key={key} />;
+            /*the strict equals operator does not converts operants of differnet type*/
+            if (msg.teleType === '1') {
+                return <LctMsgTableEntry obj={msg} key={key} />;
+            }
         });
     };
 
