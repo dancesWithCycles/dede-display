@@ -19,7 +19,8 @@ class MsgsTableEntry extends Component {
                         <p>{seconds2dmhs(Math.round(getMsgAge() / 1000))}</p>
                     </Badge>
                 </td>
-                <td>{this.props.obj.senderId}</td>
+                <td>{this.props.obj.senderId.split('/', 2)[0]}</td>
+                <td>{this.props.obj.senderId.split('/', 2)[1]}</td>
                 <td>{this.props.obj.receiverType}</td>
                 <td>{this.props.obj.teleType}</td>
                 <td>{this.props.obj.teleVersion}</td>
