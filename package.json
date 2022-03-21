@@ -1,16 +1,31 @@
 {
+    "private": true,
     "name": "dede-display",
-    "version": "1.0.4",
-    "description": "display data for the Designated Driver initialive",
+    "description": "display data for the Designated Driver initiative",
+    "version": "1.1.0",
     "main": "index.js",
+    "keywords": [
+	"public",
+	"transport",
+	"mobility",
+	"dede",
+	"designated driver",
+	"display"
+    ],
+    "author": "Software Ingenieur Begerad <dialog@SwIngBe.de>",
+    "homepage": "https://github.com/Dede-Designated-Driver/dede-display/tree/main",
+    "repository": "/Dede-Designated-Driver/dede-display",
+    "bugs": "https://github.com/Dede-Designated-Driver/dede-display/issues",
+    "license": "GPL-3.0-or-later",
+    "engines": {
+	"node": ">=10"
+    },
     "scripts": {
 	"start": "webpack-dev-server --mode development",
 	"format": "prettier --write \"src/**/*.js\"",
 	"eslint-fix": "eslint --fix \"src/**/*.js\"",
 	"build": "webpack --mode production"
     },
-    "author": "Stefan Begerad",
-    "license": "GPL-3.0-or-later",
     "dependencies": {
     "axios": "^0.26.0",
     "bootstrap": "^5.1.3",
