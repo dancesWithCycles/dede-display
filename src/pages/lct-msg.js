@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import axios from 'axios';
-import MsgsTableEntry from '../components/msgs-table-entry';
-import MsgsTableHead from '../components/msgs-table-head';
+import LctMsgTableEntry from '../components/lct-msg-table-entry';
+import LctMsgTableHead from '../components/lct-msg-table-head';
 
 const LctMsgs = () => {
     /*store msgs as array in function component state*/
@@ -13,8 +13,8 @@ const LctMsgs = () => {
     const getMsgs = async () => {
         try {
             /*TODO handle errors: https://www.valentinog.com/blog/await-react/*/
-	    /*const msgs = await axios.get('<proto://<address>:<port>/<route>');*/
-            const msgs = await axios.get('https://dede-display.vbn.de:42001/ivu-loc');
+            const msgs = await axios.get('<proto://<address>:<port>/<route>');
+
             /*set state*/
             setMsgs(msgs.data);
         } catch (err) {
@@ -44,7 +44,7 @@ const LctMsgs = () => {
     /*map over msgs array*/
     const msgsTable = () => {
         return msgs.map((msg, key) => {
-            return <MsgsTableEntry obj={msg} key={key} />;
+            return <LctMsgTableEntry obj={msg} key={key} />;
         });
     };
 
@@ -54,7 +54,7 @@ const LctMsgs = () => {
             {/*variant="dark" inverts colors*/}
             <Table striped bordered hover size="sm" variant="dark" responsive>
                 <thead className="thead-dark">
-                    <MsgsTableHead />
+                    <LctMsgTableHead />
                 </thead>
                 <tbody>{msgsTable()}</tbody>
             </Table>
