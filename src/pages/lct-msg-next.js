@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import LctMsgTable from '../components/lct-msg-table';
+import LctMsgTable from '../components/lct-msg-table-next';
 
 const LctMsgs = () => {
     /*store msgs as array in function component state*/
@@ -40,7 +40,7 @@ const LctMsgs = () => {
     }, []);
 
     /*element representing user-defined React component*/
-    const msgTable = <LctMsgTable name="Stefan" entries={msgs} />;
+    const msgTable = <LctMsgTable entries={msgs} />;
 
     return <>{msgTable}</>;
 };

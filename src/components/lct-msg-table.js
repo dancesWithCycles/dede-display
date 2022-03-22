@@ -9,6 +9,7 @@ import Head from '../components/lct-msg-table-head';
 function LctMsgTable (props) {
     /*map over msgs array*/
     const getEntries = () => {
+        console.log('entries: ' + props.entries.length);
         if (props.entries) {
             return props.entries.map((entry, key) => {
                 /*the strict equals operator does not converts operants of differnet type*/

@@ -14,6 +14,11 @@ function NavigationBar () {
                     </LinkContainer>
                 </Nav>
                 <Nav className="mr-auto">
+                    <LinkContainer to="/lct-msg-next">
+                        <Nav.Link>Lct Msg Next</Nav.Link>
+                    </LinkContainer>
+                </Nav>
+                <Nav className="mr-auto">
                     <LinkContainer to="/table-with-api">
                         <Nav.Link>Table With API</Nav.Link>
                     </LinkContainer>

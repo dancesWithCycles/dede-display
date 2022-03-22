@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LctMsgs from './pages/lct-msgs';
 import LctMsg from './pages/lct-msg';
+import LctMsgNext from './pages/lct-msg-next';
 import TableWithApi from './pages/table-with-api';
 import Contact from './pages/contact';
 import NavBar from './components/nav-bar';
@@ -21,6 +22,7 @@ const Main = () => {
             <Routes>
                 <Route path="/" element={<LctMsgs />} />
                 <Route path="/lct-msg" element={<LctMsg />} />
+                <Route path="/lct-msg-next" element={<LctMsgNext />} />
                 <Route path="/table-with-api" element={<TableWithApi />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
