@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LctMsgs from './pages/lct-msgs';
 import LctMsg from './pages/lct-msg';
+import ReactTable from './pages/react-table';
 import Contact from './pages/contact';
 import NavBar from './components/nav-bar';
 
@@ -20,6 +21,7 @@ const Main = () => {
             <Routes>
                 <Route path="/" element={<LctMsgs />} />
                 <Route path="/lct-msg" element={<LctMsg />} />
+                <Route path="/react-table" element={<ReactTable />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </BrowserRouter>
