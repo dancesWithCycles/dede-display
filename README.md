@@ -57,3 +57,5 @@ npm run build
 [How To Use Async Await in React (componentDidMount Async)](https://www.valentinog.com/blog/await-react/)
 
 [Webpack Configuration for Using Bootstrap in React](https://medium.com/@vladbezden/webpack-configuration-for-using-bootstrap-in-react-a6ef2dfa1d95)
+
+[https://betterprogramming.pub/how-to-efficiently-display-data-in-tables-with-react-7e133bad5719](https://betterprogramming.pub/how-to-efficiently-display-data-in-tables-with-react-7e133bad5719)
