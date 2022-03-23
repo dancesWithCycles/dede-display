@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PaginationTable from './table-pagination';
+import BasicTable from './table-sorting';
 
 /*the simplest way to define a component is to write a JavaScript function*/
 /*accept a single property object argument*/
@@ -72,9 +72,7 @@ function LctMsgTable (props) {
     /*define variables that 'trigger' the change on hooks*/
     const data = React.useMemo(() => props.entries, [props.entries]);
 
-    return (
-        <>{props.entries && <PaginationTable columns={columns} data={data} />}</>
-    );
+    return <>{props.entries && <BasicTable columns={columns} data={data} />}</>;
 }
 
 LctMsgTable.propTypes = {

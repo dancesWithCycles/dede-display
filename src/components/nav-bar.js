@@ -14,8 +14,23 @@ function NavigationBar () {
                     </LinkContainer>
                 </Nav>
                 <Nav className="mr-auto">
-                    <LinkContainer to="/lct-msg-next">
-                        <Nav.Link>Lct Msg Next</Nav.Link>
+                    <LinkContainer to="/lct-msg-basic">
+                        <Nav.Link>Lct Msg Basic</Nav.Link>
+                    </LinkContainer>
+                </Nav>
+                <Nav className="mr-auto">
+                    <LinkContainer to="/lct-msg-sorting">
+                        <Nav.Link>Lct Msg Sorting</Nav.Link>
+                    </LinkContainer>
+                </Nav>
+                <Nav className="mr-auto">
+                    <LinkContainer to="/lct-msg-filter">
+                        <Nav.Link>Lct Msg Filter</Nav.Link>
+                    </LinkContainer>
+                </Nav>
+                <Nav className="mr-auto">
+                    <LinkContainer to="/lct-msg-page">
+                        <Nav.Link>Lct Msg Page</Nav.Link>
                     </LinkContainer>
                 </Nav>
                 <Nav className="mr-auto">

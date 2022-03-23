@@ -1,31 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useTable, usePagination } from 'react-table';
+import { useGlobalFilter, useTable } from 'react-table';
+import GlobalFilter from './filter-global';
 
-/*load data set through these props*/
-export default function PaginationTable ({ columns, data }) {
+export default function FilterTable ({ columns, data }) {
     // Use the useTable Hook to send the columns and data to build the table
     const {
-        getTableProps, // send props to table
-        getTableBodyProps, // send props to table body
-        headerGroups, // returns normalized header groups
-        page, // fetch the current page  TODO Study!
-        nextPage,
-        previousPage,
-        canNextPage,
-        canPreviousPage,
-        prepareRow // Prepare the row in order to be displayed (this function needs to be called for each row before getting the row props)
+        getTableProps, // table props from react-table
+        getTableBodyProps, // table body props from react-table
+        headerGroups, // headerGroups, if your table has groupings
+        rows, // rows for the table based on the data passed
+        prepareRow, // Prepare the row (this function needs to be called for each row before getting the row props)
+        state, //table state
+        setGlobalFilter //applies global filtering to the table.
     } = useTable(
         {
             columns,
-            data,
-            initialState: { pageSize: 10 }
+            data
         },
-        usePagination
+        useGlobalFilter
     );
+    const { globalFilter } = state;
 
     return (
-        <div>
+        <>
+            <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
             <table {...getTableProps()}>
                 <thead>
                     {headerGroups.map((headerGroup) => (
@@ -37,7 +36,7 @@ export default function PaginationTable ({ columns, data }) {
                     ))}
                 </thead>
                 <tbody {...getTableBodyProps()}>
-                    {page.map((row, i) => {
+                    {rows.map((row, i) => {
                         prepareRow(row);
                         return (
                             <tr {...row.getRowProps()}>
@@ -51,17 +50,11 @@ export default function PaginationTable ({ columns, data }) {
                     })}
                 </tbody>
             </table>
-            <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-        Previous page{' '}
-            </button>
-            <button onClick={() => nextPage()} disabled={!canNextPage}>
-        Next page{' '}
-            </button>
-        </div>
+        </>
     );
 }
 
-PaginationTable.propTypes = {
+FilterTable.propTypes = {
     columns: PropTypes.array,
     data: PropTypes.array
 };
