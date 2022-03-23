@@ -10,32 +10,7 @@ function NavigationBar () {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <LinkContainer to="/lct-msg">
-                        <Nav.Link>Standortmeldung</Nav.Link>
-                    </LinkContainer>
-                </Nav>
-                <Nav className="mr-auto">
-                    <LinkContainer to="/lct-msg-basic">
-                        <Nav.Link>Lct Msg Basic</Nav.Link>
-                    </LinkContainer>
-                </Nav>
-                <Nav className="mr-auto">
-                    <LinkContainer to="/lct-msg-sorting">
-                        <Nav.Link>Lct Msg Sorting</Nav.Link>
-                    </LinkContainer>
-                </Nav>
-                <Nav className="mr-auto">
-                    <LinkContainer to="/lct-msg-filter">
-                        <Nav.Link>Lct Msg Filter</Nav.Link>
-                    </LinkContainer>
-                </Nav>
-                <Nav className="mr-auto">
-                    <LinkContainer to="/lct-msg-page">
-                        <Nav.Link>Lct Msg Page</Nav.Link>
-                    </LinkContainer>
-                </Nav>
-                <Nav className="mr-auto">
-                    <LinkContainer to="/table-with-api">
-                        <Nav.Link>Table With API</Nav.Link>
+                        <Nav.Link>Standortmeldung [live]</Nav.Link>
                     </LinkContainer>
                 </Nav>
                 <Nav className="mr-auto">

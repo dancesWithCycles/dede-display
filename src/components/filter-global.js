@@ -5,7 +5,7 @@ export default function GlobalFilter ({ filter, setFilter }) {
     return (
         <>
             <p>
-        Suche:
+                <b>Suche:</b>
                 {/*the default value of the input component should be the value of the filter prop.*/}
                 {/*if the user writes some text, then invoke the setFilter method.*/}
                 <input
@@ -19,5 +19,5 @@ export default function GlobalFilter ({ filter, setFilter }) {
 
 GlobalFilter.propTypes = {
     filter: PropTypes.string,
-    setFilter: PropTypes.function
+    setFilter: PropTypes.func
 };

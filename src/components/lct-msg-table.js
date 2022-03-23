@@ -7,7 +7,7 @@ import Head from '../components/lct-msg-table-head';
 /*the simplest way to define a component is to write a JavaScript function*/
 /*accept a single property object argument*/
 function LctMsgTable (props) {
-    /*map over msgs array*/
+    /*map over msgs array and return Standortmeldungen*/
     const getEntries = () => {
         console.log('entries: ' + props.entries.length);
         if (props.entries) {

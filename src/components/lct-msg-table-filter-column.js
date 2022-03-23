@@ -1,16 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PaginationTable from './table-pagination';
+import BasicTable from './table-filter-column';
 
 /*the simplest way to define a component is to write a JavaScript function*/
 /*accept a single property object argument*/
 function LctMsgTable (props) {
-    /*TODO
-                <td>Alter</td>
-                <td>Mandant</td>
-                <td>Fahrzeug Nummer</td>
-*/
-
     /*create headings*/
     /*useMemo tells React that data isn't being recreated on every render*/
     const columns = React.useMemo(
@@ -72,9 +66,7 @@ function LctMsgTable (props) {
     /*define variables that 'trigger' the change on hooks*/
     const data = React.useMemo(() => props.entries, [props.entries]);
 
-    return (
-        <>{props.entries && <PaginationTable columns={columns} data={data} />}</>
-    );
+    return <>{props.entries && <BasicTable columns={columns} data={data} />}</>;
 }
 
 LctMsgTable.propTypes = {

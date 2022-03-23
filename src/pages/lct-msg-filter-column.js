@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import LctMsgTable from '../components/lct-msg-table';
+import LctMsgTable from '../components/lct-msg-table-filter-column';
 
-const LctMsg = () => {
+const LctMsgs = () => {
     /*store msgs as array in function component state*/
     /*initialise as empty array*/
     const [msgs, setMsgs] = useState([]);
@@ -20,7 +20,7 @@ const LctMsg = () => {
         }
     };
 
-    /*this hook is run after a DOM update. Changing state migh result in an infinite loop*/
+    /*this hook is run after a DOM update. Changing state might result in an infinite loop*/
     useEffect(() => {
     /*effect goes here*/
 
@@ -30,7 +30,7 @@ const LctMsg = () => {
         /*update msgs periodically*/
         const interval = setInterval(() => {
             getMsgs();
-        }, 1000);
+        }, 60000);
 
         /*clear interval when the user navigates to another page*/
         return () => clearInterval(interval);
@@ -44,4 +44,4 @@ const LctMsg = () => {
 
     return <>{msgTable}</>;
 };
-export default LctMsg;
+export default LctMsgs;
