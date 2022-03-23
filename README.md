@@ -58,4 +58,6 @@ npm run build
 
 [Webpack Configuration for Using Bootstrap in React](https://medium.com/@vladbezden/webpack-configuration-for-using-bootstrap-in-react-a6ef2dfa1d95)
 
-[https://betterprogramming.pub/how-to-efficiently-display-data-in-tables-with-react-7e133bad5719](https://betterprogramming.pub/how-to-efficiently-display-data-in-tables-with-react-7e133bad5719)
+[How To Efficiently Display Data in Tables With React](https://betterprogramming.pub/how-to-efficiently-display-data-in-tables-with-react-7e133bad5719)
+
+[React Table: A complete tutorial with examples](https://blog.logrocket.com/complete-guide-building-smart-data-table-react/#alternatives)
