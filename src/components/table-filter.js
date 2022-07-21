@@ -3,14 +3,15 @@ import PropTypes from 'prop-types';
 import { useGlobalFilter, useTable } from 'react-table';
 import GlobalFilter from './filter-global';
 
+/*load data set through these props*/
 export default function FilterTable ({ columns, data }) {
     // Use the useTable Hook to send the columns and data to build the table
     const {
-        getTableProps, // table props from react-table
-        getTableBodyProps, // table body props from react-table
-        headerGroups, // headerGroups, if your table has groupings
+        getTableProps, // send props to table
+        getTableBodyProps, // send props to table body
+        headerGroups, // returns normalized header groups
+        prepareRow, // Prepare the row in order to be displayed (this function needs to be called for each row before getting the row props)
         rows, // rows for the table based on the data passed
-        prepareRow, // Prepare the row (this function needs to be called for each row before getting the row props)
         state, //table state
         setGlobalFilter //applies global filtering to the table.
     } = useTable(
