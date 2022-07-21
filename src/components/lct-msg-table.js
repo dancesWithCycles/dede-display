@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Table from 'react-bootstrap/Table';
-import Entry from '../components/lct-msg-table-entry';
-import Head from '../components/lct-msg-table-head';
+import Entry from './lct-msg-table-entry';
+import Head from './lct-msg-table-head';
 
 /*the simplest way to define a component is to write a JavaScript function*/
 /*accept a single property object argument*/
