@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import LctMsgTable from '../components/lct-msg-table-basic';
-
+import config from '../config';
 const LctMsgs = () => {
     /*store msgs as array in function component state*/
     /*initialise as empty array*/
@@ -11,7 +11,7 @@ const LctMsgs = () => {
     const getMsgs = async () => {
         try {
             /*TODO handle errors: https://www.valentinog.com/blog/await-react/*/
-            const msgs = await axios.get('https://dede-display.vbn.de:42001/ivu-loc');
+            const msgs = await axios.get(`${config.API}`);
 
             /*set state*/
             setMsgs(msgs.data);
