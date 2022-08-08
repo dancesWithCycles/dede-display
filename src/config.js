@@ -1,3 +1,3 @@
 export default {
-    API: '<proto://<address>:<port>/<route>'
+    API: 'https://dede-display.vbn.de/ivu-loc/data'
 };
