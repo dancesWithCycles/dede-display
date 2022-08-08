@@ -1,3 +1,3 @@
 export default {
-    API: 'https://dede-display.vbn.de/ivu-loc/data'
+    API: 'https://dede-display.vbn.de/data/ivu-loc'
 };
